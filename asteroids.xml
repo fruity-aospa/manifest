@@ -18,6 +18,7 @@
 
   <!-- Replace upstream projects carrying accepted asteroids build fixes. -->
   <remove-project name="platform/art" />
+  <remove-project name="platform/external/dtc" />
   <remove-project name="AOSPA/android_device_qcom_common" />
   <remove-project name="AOSPA/android_hardware_lineage_compat" />
   <remove-project name="AOSPA/android_hardware_qcom_wlan" />
@@ -31,6 +32,7 @@
 
   <!-- Successful-build source set, pinned to verified fruity-aospa commits. -->
   <project path="art" name="fruity-aospa/android_art" remote="github" revision="fa2fe243eb3b4de721425ef5ac15b09893b92e09" />
+  <project path="external/dtc" name="fruity-aospa/android_external_dtc" remote="github" revision="8aec8bb781a84445da1742ca3c5671c00a7a1e53" />
   <project path="device/qcom/common" name="fruity-aospa/android_device_qcom_common" remote="github" revision="f8a8deb370f3d35fda131a6708cefb7652af9573" />
   <project path="hardware/lineage/compat" name="fruity-aospa/android_hardware_lineage_compat" remote="github" revision="ba442d6d66e2a91716ab28b2be0b69259bafd22a" />
   <project path="hardware/qcom/wlan" name="fruity-aospa/android_hardware_qcom_wlan" remote="github" revision="5dd43d4ff3c01ba0052948b7d4274b7985e24d53" />
