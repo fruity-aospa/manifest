@@ -16,6 +16,19 @@
   -->
   <include name="default.xml" />
 
+  <!-- Replace upstream projects carrying accepted asteroids build fixes. -->
+  <remove-project name="platform/art" />
+  <remove-project name="AOSPA/android_device_qcom_common" />
+  <remove-project name="AOSPA/android_hardware_lineage_compat" />
+  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
+  <remove-project name="platform/system/apex" />
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <remove-project name="proprietary_vendor_qcom_common" />
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_dataservices" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+
   <!-- Successful-build source set, pinned to verified fruity-aospa commits. -->
   <project path="art" name="fruity-aospa/android_art" remote="github" revision="fa2fe243eb3b4de721425ef5ac15b09893b92e09" />
   <project path="device/qcom/common" name="fruity-aospa/android_device_qcom_common" remote="github" revision="f8a8deb370f3d35fda131a6708cefb7652af9573" />
