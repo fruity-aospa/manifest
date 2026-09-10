@@ -16,9 +16,22 @@
   -->
   <include name="default.xml" />
 
-  <!-- Asteroids-specific compatibility selection; not a generic Volcano HAL set. -->
-  <project path="device/nothing/asteroids" name="fruity-aospa/android_device_nothing_asteroids" remote="github" revision="244f7ae9cf471ea91321714ed6257ec64371708e" />
-  <project path="vendor/nothing/asteroids" name="fruity-aospa/proprietary_vendor_nothing_asteroids" remote="github" revision="837b7cf19fff4a31eea38a1cd48ac30582b6a861" />
+  <!-- Successful-build source set, pinned to verified fruity-aospa commits. -->
+  <project path="art" name="fruity-aospa/android_art" remote="github" revision="fa2fe243eb3b4de721425ef5ac15b09893b92e09" />
+  <project path="device/qcom/common" name="fruity-aospa/android_device_qcom_common" remote="github" revision="f8a8deb370f3d35fda131a6708cefb7652af9573" />
+  <project path="hardware/lineage/compat" name="fruity-aospa/android_hardware_lineage_compat" remote="github" revision="ba442d6d66e2a91716ab28b2be0b69259bafd22a" />
+  <project path="hardware/qcom/wlan" name="fruity-aospa/android_hardware_qcom_wlan" remote="github" revision="5dd43d4ff3c01ba0052948b7d4274b7985e24d53" />
+  <project path="system/apex" name="fruity-aospa/android_system_apex" remote="github" revision="9df1e8e33ac978c04b56276e20bcfd7514be8f46" />
+  <project path="vendor/aospa" name="fruity-aospa/android_vendor_aospa" remote="github" revision="93a5e31f05a6da3bb64bfdbe1e377266ec784190" />
+  <project path="vendor/qcom/common" name="fruity-aospa/proprietary_vendor_qcom_common" remote="github" revision="023975994ff55c7de471fc42b0da8d9d53154ef0" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="fruity-aospa/android_vendor_qcom_opensource_commonsys-intf_display" remote="github" revision="da95776ba02843646e8cded7d8141a67cf801bbc" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="fruity-aospa/android_vendor_qcom_opensource_commonsys_display" remote="github" revision="11e0868e3bdc64bdfc3ba96437816081d2bd500f" />
+  <project path="vendor/qcom/opensource/dataservices" name="fruity-aospa/android_vendor_qcom-opensource_dataservices" remote="github" revision="3f9f5d45e530d00e06781441542a23190f9a0b25" />
+  <project path="vendor/qcom/opensource/interfaces" name="fruity-aospa/android_vendor_qcom_opensource_interfaces" remote="github" revision="38e8104f4a0efe341e103ca470956b1185bad60c" />
+
+  <!-- Asteroids-specific dependencies. -->
+  <project path="device/nothing/asteroids" name="fruity-aospa/android_device_nothing_asteroids" remote="github" revision="933f19cb7a46179039ae11bde883fb466a4c1f3b" />
+  <project path="vendor/nothing/asteroids" name="fruity-aospa/proprietary_vendor_nothing_asteroids" remote="github" revision="cc432a7b4e9ecb7e1ac2500d478a2d416b85e559" />
   <project path="hardware/nothing" name="fruity-aospa/android_hardware_nothing" remote="github" revision="735fc8f5915a92a8503c81064da48e9fd98f0ea0" />
   <project path="packages/apps/ParanoidGlyph" name="fruity-aospa/packages_apps_ParanoidGlyph" remote="github" revision="348d2c4257865681aff8aa96293d4ab8188f2530" />
   <project path="packages/apps/GlyphAdapter" name="fruity-aospa/packages_apps_GlyphAdapter" remote="github" revision="d15021d86dfd5e054dade0683bd51c8f9a501f7f" />
