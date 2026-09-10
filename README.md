@@ -47,6 +47,16 @@ Initialize the manifest repository:
 repo init -u https://github.com/AOSPA/manifest -b calcite
 ```
 
+### Asteroids beans manifest
+
+Initialize from the fruity manifest and sync the asteroids dependency manifest:
+```bash
+repo init -u https://github.com/fruity-aospa/manifest -b calcite -m asteroids.xml
+repo sync
+```
+
+Build discovery remains AOSPA-native: `vendor/aospa/products/asteroids/beans.xml` is the source selected by the product build; invoke `./rom-build.sh asteroids` from the workspace root. `asteroids.xml` is a manifest-only mirror of that file and its included `vendor/aospa/products/platforms/volcano-lineage.xml`, pinned for reproducible source checkout.
+
 ### Download the source tree
 
 Run `repo sync` to pull upstream source code.

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: Paranoid Android
+     SPDX-License-Identifier: Apache-2.0
+-->
+<!--
+     Asteroids dependencies mirrored from
+     vendor/aospa/products/asteroids/beans.xml and its included
+     vendor/aospa/products/platforms/volcano-lineage.xml.
+-->
+<manifest>
+  <!-- Asteroids-specific compatibility selection; not a generic Volcano HAL set. -->
+  <project path="device/nothing/asteroids" name="fruity-aospa/android_device_nothing_asteroids" remote="github" revision="244f7ae9cf471ea91321714ed6257ec64371708e" />
+  <project path="vendor/nothing/asteroids" name="fruity-aospa/proprietary_vendor_nothing_asteroids" remote="github" revision="837b7cf19fff4a31eea38a1cd48ac30582b6a861" />
+  <project path="hardware/nothing" name="fruity-aospa/android_hardware_nothing" remote="github" revision="735fc8f5915a92a8503c81064da48e9fd98f0ea0" />
+  <project path="packages/apps/ParanoidGlyph" name="fruity-aospa/packages_apps_ParanoidGlyph" remote="github" revision="348d2c4257865681aff8aa96293d4ab8188f2530" />
+  <project path="packages/apps/GlyphAdapter" name="fruity-aospa/packages_apps_GlyphAdapter" remote="github" revision="d15021d86dfd5e054dade0683bd51c8f9a501f7f" />
+
+  <!-- Deterministic kernel bundle producer inputs; these are not consumed inline. -->
+  <project path="kernel/nothing/sm7635" name="fruity-aospa/android_kernel_nothing_sm7635" remote="github" revision="1b6d6d95170e5f36a532430c8e74b3b1fb139cdb" />
+  <project path="kernel/nothing/sm7635-modules" name="fruity-aospa/android_kernel_nothing_sm7635-modules" remote="github" revision="0f520a49516e61c9de9092b6648ef5eb7c878b71" />
+  <project path="kernel/nothing/sm7635-devicetrees" name="fruity-aospa/android_kernel_nothing_sm7635-devicetrees" remote="github" revision="e0eb1dc2235850f9f966bfb3294967d06c00a0f1" />
+
+  <!-- Compatibility selections for Nothing Phone (3a)/(3a Pro) (asteroids). -->
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" remote="github" revision="2cd569fbf966e84d67fd86e7f14f9fc4fa621030">
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8650/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" remote="github" revision="ec6b675a3487fa6481756a6978fcc1f0d8b9a0b3">
+    <linkfile src="Androidmk" dest="hardware/qcom-caf/sm8650/audio/agm/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="LineageOS/android_vendor_qcom_opensource_audioreach-graphservices" remote="github" revision="49a735ba16fe132dbb2075590ff51603eafb68f7">
+    <linkfile src="Androidmk" dest="hardware/qcom-caf/sm8650/audio/graphservices/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8650/audio/pal" name="LineageOS/android_vendor_qcom_opensource_arpal-lx" remote="github" revision="9cad645e8e7ed30f4efd8ca43be20bb76fa264af">
+    <linkfile src="Androidmk" dest="hardware/qcom-caf/sm8650/audio/pal/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="LineageOS/android_hardware_qcom_audio-ar" remote="github" revision="2aa541f626ecc029fce24f3882aaee84c11fb161">
+    <linkfile src="Androidmk" dest="hardware/qcom-caf/sm8650/audio/primary-hal/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/sm8650/display" name="LineageOS/android_hardware_qcom_display" remote="github" revision="fe6db19f67a58c43a794b9517eade8426dcce71c" />
+</manifest>
