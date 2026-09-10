@@ -9,6 +9,13 @@
      vendor/aospa/products/platforms/volcano-lineage.xml.
 -->
 <manifest>
+  <!--
+       Use the standard calcite manifest as the base.  Repo resolves includes
+       relative to this manifest repository; default.xml does not include this
+       entry, so this creates no recursive include.
+  -->
+  <include name="default.xml" />
+
   <!-- Asteroids-specific compatibility selection; not a generic Volcano HAL set. -->
   <project path="device/nothing/asteroids" name="fruity-aospa/android_device_nothing_asteroids" remote="github" revision="244f7ae9cf471ea91321714ed6257ec64371708e" />
   <project path="vendor/nothing/asteroids" name="fruity-aospa/proprietary_vendor_nothing_asteroids" remote="github" revision="837b7cf19fff4a31eea38a1cd48ac30582b6a861" />
