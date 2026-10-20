@@ -52,4 +52,57 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
 
+  <!-- AOSPAAsteroids (fruity-aospa) overrides ============================= -->
+  <remote name="fru"
+          fetch="https://github.com/fruity-aospa"
+          sync-c="true"
+          sync-tags="false"
+          revision="asteroids" />
+
+  <!-- Our platform forks (fixes: RBE/soong, kernelscripts, dtc overlays,
+       lineage compat libinput, wlan, devicesettings, vendor bits, QTI
+       power HAL + QCOM data/IPA bring-up) -->
+  <remove-project name="AOSPA/android_build_soong" />
+  <project path="build/soong" name="android_build_soong" remote="fru" />
+
+  <remove-project name="platform/external/dtc" />
+  <project path="external/dtc" name="android_external_dtc" remote="fru" />
+
+  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="fru" />
+
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="android_vendor_qcom-opensource_core-utils-vendor" remote="fru" />
+
+  <remove-project name="platform/vendor/qcom-opensource/recovery-ext" />
+  <project path="vendor/qcom/opensource/recovery-ext" name="android_vendor_qcom-opensource_recovery-ext" remote="fru" />
+
+  <remove-project name="AOSPA/android_kernel_build" />
+  <project path="device/qcom/kernelscripts" name="android_kernel_build" remote="fru" />
+
+  <remove-project name="AOSPA/android_hardware_lineage_compat" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="fru" />
+
+  <remove-project name="AOSPA/android_packages_resources_devicesettings" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="fru" />
+
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <project path="vendor/aospa" name="android_vendor_aospa" remote="fru" />
+
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="fru" />
+
+  <remove-project name="proprietary_vendor_qcom_common" />
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="fru" />
+
+  <!-- Device bring-up: asteroids (nothing) -->
+  <project path="device/nothing/asteroids" name="android_device_nothing_asteroids" remote="fru" />
+  <project path="vendor/nothing/asteroids" name="proprietary_vendor_nothing_asteroids" remote="fru" />
+  <project path="hardware/nothing" name="android_hardware_nothing" remote="fru" />
+  <project path="kernel/nothing/sm7635" name="android_kernel_nothing_sm7635" remote="fru" />
+  <project path="kernel/nothing/sm7635-modules" name="android_kernel_nothing_sm7635-modules" remote="fru" />
+  <project path="kernel/nothing/sm7635-devicetrees" name="android_kernel_nothing_sm7635-devicetrees" remote="fru" />
+  <project path="hardware/dolby" name="hardware_dolby" remote="fru" />
+  <project path="packages/apps/DolbyAtmos" name="android_packages_apps_DolbyAtmos" remote="fru" />
+
 </manifest>
