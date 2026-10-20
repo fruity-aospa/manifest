@@ -95,6 +95,17 @@
   <remove-project name="proprietary_vendor_qcom_common" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="fru" />
 
+  <!-- sm8650 CAF HALs (audio, data, display), forked from LineageOS -->
+  <project path="hardware/qcom-caf/sm8650/audio/agm" name="android_vendor_qcom_opensource_agm" remote="fru" revision="calcite-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="android_vendor_qcom_opensource_audioreach-graphservices" remote="fru" revision="calcite-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" remote="fru" revision="calcite-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="android_hardware_qcom_audio-ar" remote="fru" revision="calcite-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="fru" revision="calcite-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" remote="fru" revision="calcite-caf-sm8650" />
+  <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" remote="fru" revision="calcite-caf-sm8650">
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+  </project>
+
   <!-- Device bring-up: asteroids (nothing) -->
   <project path="device/nothing/asteroids" name="android_device_nothing_asteroids" remote="fru" />
   <project path="vendor/nothing/asteroids" name="proprietary_vendor_nothing_asteroids" remote="fru" />
