@@ -127,6 +127,6 @@
   <project path="kernel/nothing/sm7635-modules" name="android_kernel_nothing_sm7635-modules" remote="fru" revision="asteroids" />
   <project path="kernel/nothing/sm7635-devicetrees" name="android_kernel_nothing_sm7635-devicetrees" remote="fru" revision="asteroids" />
   <project path="hardware/dolby" name="hardware_dolby" remote="fru" revision="asteroids" />
-  <project path="packages/apps/DolbyAtmos" name="android_packages_apps_DolbyAtmos" remote="fru" revision="asteroids" />
+  <project path="packages/apps/LunarisDolby" name="crdroidandroid/android_packages_apps_LunarisDolby" remote="github" revision="17.0" />
 
 </manifest>
