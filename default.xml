@@ -113,4 +113,8 @@
   <project path="hardware/dolby" name="hardware_dolby" remote="fru" revision="calcite-6.1" />
   <project path="packages/apps/LunarisDolby" name="crdroidandroid/android_packages_apps_LunarisDolby" remote="github" revision="17.0" />
 
+  <!-- Apps -->
+  <remove-project name="AOSPA/android_packages_apps_Launcher3" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="fru" revision="calcite-6.1" />
+
 </manifest>

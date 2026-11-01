@@ -27,3 +27,4 @@ enough, no local_manifest needed.
 - Device, blobs, hardware/nothing and the sm7635 kernel family track
   `calcite-6.1` (kernel 6.1 stack on C5.0 blobs).
 - Nothing Camera lives in `hardware/nothing/camera` (git-lfs).
+- Launcher3 carries QuickSpace (off by default).
