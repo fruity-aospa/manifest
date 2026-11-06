@@ -91,8 +91,6 @@
   <remove-project name="proprietary_vendor_qcom_common" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="fru" />
 
-  <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
-
   <!-- Device & HAL dependencies -->
   <include name="beans.xml" />
 
