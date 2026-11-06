@@ -13,6 +13,9 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
   </project>
 
+  <!-- Hardware / OpenSource Power -->
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="fru" revision="calcite-asteroids-manifest" />
+
   <!-- Device bring-up: asteroids (nothing) -->
   <project path="device/nothing/asteroids" name="android_device_nothing_asteroids" remote="fru" revision="calcite-6.1" />
   <project path="vendor/nothing/asteroids" name="proprietary_vendor_nothing_asteroids" remote="fru" revision="calcite-6.1" />
