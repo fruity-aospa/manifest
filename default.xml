@@ -59,6 +59,31 @@
           sync-tags="false"
           revision="calcite" />
 
+  <!-- Local framework, power and build fixes -->
+  <remove-project name="AOSPA/android_build_soong" />
+  <project path="build/soong" name="android_build_soong" remote="fru">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <remove-project name="AOSPA/android_frameworks_base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="fru" />
+
+  <remove-project name="AOSPA/android_frameworks_native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="fru" />
+
+  <remove-project name="AOSPA/android_system_memory_lmkd" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="fru" />
+
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="fru" />
+
+  <remove-project name="platform/vendor/opensource/data-eth" />
+  <project path="vendor/qcom/opensource/data-eth" name="android_vendor_qcom_opensource_data-eth" remote="fru" revision="main">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/dataeth_dlkm_vendor_board.mk" src="dataeth_dlkm_vendor_board.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataeth_dlkm_vendor_product.mk" src="dataeth_dlkm_vendor_product.mk" />
+  </project>
+
   <!-- Our platform forks (fixes: kernelscripts, dtc overlays, wlan,
        vendor bits + QCOM data/IPA bring-up) -->
   <remove-project name="platform/external/dtc" />
@@ -99,7 +124,7 @@
   <project path="hardware/qcom-caf/sm8650/audio/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" remote="fru" revision="calcite-8650" />
   <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="fru" revision="calcite-caf-sm8650" />
   <project path="hardware/qcom-caf/sm8650/dataipa" name="android_vendor_qcom_opensource_dataipa" remote="fru" revision="calcite-caf-sm8650" />
-  <project path="hardware/qcom-caf/sm8650/display" name="android_hardware_qcom_display" remote="fru" revision="calcite-caf-sm8650">
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="fru" revision="calcite-caf-sm8650">
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
   </project>
 

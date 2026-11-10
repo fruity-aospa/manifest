@@ -8,7 +8,7 @@
   <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="76ce06b26371aa8f7a9437851d2d65325d0e7a68" upstream="refs/heads/wlan-cld3.driver.lnx.2.0.r172-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="08ce954127783c5dbafa129103cda939c93a48bb" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r75-rel"/>
   <project remote="clo-la" name="platform/vendor/qcom-opensource/wlan/wlan-devicetree" path="vendor/qcom/opensource/wlan/wlan-devicetree" revision="d9401ba65d711a735416b76df00cd6375cd350c2" upstream="refs/heads/wlan-platform.lnx.2.0.r8-rel"/>
-  <project remote="clo-la" name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="03ced4a24e88d43a9626440bc7c14f92aca16d44" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r75-rel">
+  <project remote="clo-la" name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="05f638de6e4092d51bd7f5f8362581614d2e1819" upstream="refs/heads/wlan-service-mcc.lnx.1.0.r75-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/wlan_techpack.mk" src="wlan_techpack.mk"/>
   </project>
 </manifest>
